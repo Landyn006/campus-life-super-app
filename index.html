@@ -1,59 +1,47 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Campus Life Super App</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Campus Life Super App</h1>
-    <p>Your all-in-one student hub</p>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="index.html">Campus App</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-<nav>
-    <a href="#events">Events</a>
-    <a href="#meals">Meal Plans</a>
-    <a href="#clubs">Clubs</a>
-    <a href="#contact">Contact</a>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<section class="hero">
-    <h2>Welcome Students!</h2>
-    <p>Stay connected with campus life.</p>
-</section>
+<header class="hero text-center text-white p-5">
+<h1>Campus Life Super App</h1>
+<p>Your all-in-one student resource hub</p>
+<button onclick="welcomeMsg()" class="btn btn-light">Click Me</button>
+</header>
 
-<section id="events" class="card">
-    <h2>Upcoming Events</h2>
-    <ul>
-        <li>Spring Concert - May 10</li>
-        <li>Career Fair - May 15</li>
-        <li>Basketball Game - May 20</li>
-    </ul>
+<section class="container mt-5">
+<h2>Features</h2>
+<div class="row">
+<div class="col-md-4"><div class="card p-3">Dining Info</div></div>
+<div class="col-md-4"><div class="card p-3">Campus Events</div></div>
+<div class="col-md-4"><div class="card p-3">Student Clubs</div></div>
+</div>
 </section>
-
-<section id="meals" class="card">
-    <h2>Meal Plans</h2>
-    <p>Check dining hall menus and meal balances.</p>
-</section>
-
-<section id="clubs" class="card">
-    <h2>Student Clubs</h2>
-    <p>Join clubs and organizations on campus.</p>
-</section>
-
-<section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: support@campusapp.edu</p>
-</section>
-
-<footer>
-    <p>© 2026 Campus Life Super App</p>
-</footer>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
