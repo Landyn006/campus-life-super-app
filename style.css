@@ -19,7 +19,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: black;
     margin: 15px;
     text-decoration: none;
     font-weight: bold;
@@ -32,7 +32,8 @@ nav a {
 }
 
 .card {
-    background: white;
+    background: black;
+    color: white;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
